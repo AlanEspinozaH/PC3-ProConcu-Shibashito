@@ -1,0 +1,26 @@
+# Maven / Java
+**/target/
+**/dist/
+*.class
+*.log
+
+# NetBeans / IDE
+nbproject/private/
+**/.idea/
+*.iml
+.project
+.classpath
+.settings/
+
+# SO
+.DS_Store
+Thumbs.db
+
+# Configs con secretos (dejaremos *ejemplos* versionados)
+**/config/*.json
+**/.env
+python/**/venv/
+python/**/.venv/
+
+# Archivos generados
+out/

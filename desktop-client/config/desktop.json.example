@@ -1,0 +1,10 @@
+{
+  "mqHost": "127.0.0.1",
+  "mqVhost": "aaa",
+  "mqUser": "admin",
+  "mqPass": "admin",
+  "bankCmdEx": "bank.cmd",
+  "bankEvtEx": "bank.evt",
+  "reniecRpcQueue": "q.reniec.rpc",
+  "clientReplyQueue": "q.bank.reply"
+}

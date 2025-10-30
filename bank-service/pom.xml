@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>a</groupId>
+        <artifactId>PC3-ProConcu-shibasito</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>bank-service</artifactId>
+    <packaging>jar</packaging>
+    
+    <properties>
+        <maven.compiler.release>24</maven.compiler.release>
+        <exec.mainClass>a.bank.service.BankService</exec.mainClass>
+    </properties>
+    
+    <dependencies>
+    <!-- reutiliza Config, Json, Rabbit, DTOs -->
+      <dependency>
+        <groupId>a</groupId>
+        <artifactId>common</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+    <!-- JDBC Postgres -->
+      <dependency>
+        <groupId>org.postgresql</groupId>
+        <artifactId>postgresql</artifactId>
+        <version>42.7.4</version>
+      </dependency>
+
+    <!-- Pool de conexiones -->
+      <dependency>
+        <groupId>com.zaxxer</groupId>
+        <artifactId>HikariCP</artifactId>
+        <version>5.1.0</version>
+      </dependency>
+
+    <!-- si serializas con Jackson dentro del servicio -->
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>2.17.2</version>
+      </dependency>
+  
+    </dependencies>
+    
+    <build>
+     <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.1.0</version>
+        <configuration>
+          <mainClass>${exec.mainClass}</mainClass>
+        </configuration>
+      </plugin>
+     </plugins>
+    </build>
+  
+</project>
