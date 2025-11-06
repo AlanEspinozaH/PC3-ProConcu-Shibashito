@@ -1,0 +1,7 @@
+{
+  "mqHost": "127.0.0.1",
+  "mqVhost": "aaa",
+  "mqUser": "admin",
+  "mqPass": "admin",
+  "reniecRpcQueue": "q.reniec.rpc"
+}

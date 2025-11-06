@@ -5,12 +5,15 @@
     <artifactId>PC3-ProConcu-shibasito</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+    
     <modules>
         <module>common</module>
         <module>bank-service</module>
         <module>desktop-client</module>
         <module>loadgen</module>
+        <module>reniec-service-java</module>
     </modules>
+    
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.release>24</java.release>
